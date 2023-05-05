@@ -1,14 +1,9 @@
 import { useCallback, useEffect } from "react"
+import { useDrumPad } from "../../contexts/drumPadContext"
 
 function DrumPad({ name, keyboard, audioImport }) {
-    const handleKeyPress = useCallback(keyPress, [keyboard, name])
-
-    function keyPress(event) {
-        const { key } = event
-        const drumPad = document.getElementById(name)
-        
-        if (key.toUpperCase() === keyboard) drumPad.click()
-    }
+    const handleKeyPress = useCallback(keyPress, [])
+    const { setDrumPad } = useDrumPad()
 
     useEffect(() => {
       document.addEventListener('keypress', handleKeyPress)
@@ -18,8 +13,20 @@ function DrumPad({ name, keyboard, audioImport }) {
       }
     }, [handleKeyPress])
 
+    function keyPress(event) {
+        const { key } = event
+        if (key.toUpperCase() !== keyboard) return
+        
+        const drumPad = document.getElementById(name)
+
+        setDrumPad(name)
+        drumPad.click()
+    }
+
     function playAudio() {
         const audio = document.getElementById(keyboard)
+        
+        setDrumPad(name)
         audio.play()
     }
 

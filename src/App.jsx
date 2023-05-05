@@ -1,9 +1,12 @@
+import { DrumPadProvider } from "./contexts/drumPadContext"
 import DrumMachine from "./layouts/DrumMachine/DrumMachine"
 
 function App() {
   return (
     <main id="App">
-      <DrumMachine />
+      <DrumPadProvider>
+        <DrumMachine />
+      </DrumPadProvider>
     </main>
   )
 }

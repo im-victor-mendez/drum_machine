@@ -1,6 +1,10 @@
+import { useDrumPad } from "../../contexts/drumPadContext"
+
 function Display() {
+  const { drumPad } = useDrumPad()
+  
   return (
-    <div id="display"></div>
+    <div id="display">{drumPad && drumPad}</div>
   )
 }
 export default Display
