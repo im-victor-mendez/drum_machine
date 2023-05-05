@@ -1,7 +1,7 @@
 import './DrumMachine.scss'
 import Display from "../../components/Display/Display"
 import DrumPad from "../../components/DrumPad/DrumPad"
-import { drumPads } from "../../components/DrumPad/drumpads"
+import { drumPads } from "../../components/DrumPad/drumPads.js"
 
 function DrumMachine() {
   return (
