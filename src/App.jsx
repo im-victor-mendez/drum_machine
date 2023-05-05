@@ -1,6 +1,10 @@
+import DrumMachine from "./layouts/DrumMachine/DrumMachine"
+
 function App() {
   return (
-    <main id="App"></main>
+    <main id="App">
+      <DrumMachine />
+    </main>
   )
 }
 
