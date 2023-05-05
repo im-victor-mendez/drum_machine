@@ -1,3 +1,4 @@
+import './DrumPad.scss'
 import { useCallback, useEffect } from "react"
 import { useDrumPad } from "../../contexts/drumPadContext"
 

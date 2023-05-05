@@ -1,0 +1,18 @@
+#drum-machine {
+    background-color: var(--light-gray);
+    border: 3px solid orange;
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 1rem 2rem;
+
+    #drum-pads {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 0.5rem;
+    }
+}

@@ -1,3 +1,4 @@
+import './Display.scss'
 import { useDrumPad } from "../../contexts/drumPadContext"
 
 function Display() {
