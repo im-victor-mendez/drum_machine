@@ -1,7 +1,11 @@
 {
-  "name": "vite-project",
-  "private": true,
-  "version": "0.0.0",
+  "name": "drum-machine",
+  "author": {
+    "name": "Victor Mendez",
+    "url": "https://www.linkedin.com/in/im-victor-mendez/"
+  },
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
