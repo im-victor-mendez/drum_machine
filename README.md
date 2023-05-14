@@ -79,8 +79,11 @@ git clone https://github.com/im-victor-mendez/drum_machine.git
 # Install dependencies
 npm install
 
-# Run the app
-npm start
+# Build app
+npm run build
+
+# Run app
+npm run preview
 ```
 
 ## Contact
